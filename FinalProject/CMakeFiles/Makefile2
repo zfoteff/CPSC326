@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/csuser/Documents/cpsc326/project-zfoteff
+CMAKE_SOURCE_DIR = /home/csuser/Documents/cpsc326/FinalProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/csuser/Documents/cpsc326/project-zfoteff
+CMAKE_BINARY_DIR = /home/csuser/Documents/cpsc326/FinalProject
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ clean: CMakeFiles/mypl.dir/clean
 CMakeFiles/mypl.dir/all:
 	$(MAKE) -f CMakeFiles/mypl.dir/build.make CMakeFiles/mypl.dir/depend
 	$(MAKE) -f CMakeFiles/mypl.dir/build.make CMakeFiles/mypl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csuser/Documents/cpsc326/project-zfoteff/CMakeFiles --progress-num=1,2 "Built target mypl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csuser/Documents/cpsc326/FinalProject/CMakeFiles --progress-num=1,2 "Built target mypl"
 .PHONY : CMakeFiles/mypl.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mypl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csuser/Documents/cpsc326/project-zfoteff/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csuser/Documents/cpsc326/FinalProject/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mypl.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csuser/Documents/cpsc326/project-zfoteff/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csuser/Documents/cpsc326/FinalProject/CMakeFiles 0
 .PHONY : CMakeFiles/mypl.dir/rule
 
 # Convenience name for target.

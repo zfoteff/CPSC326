@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/csuser/Documents/cpsc326/project-zfoteff/ast.h
+/home/csuser/Documents/cpsc326/FinalProject/ast.h
 list
 -
 token.h
-/home/csuser/Documents/cpsc326/project-zfoteff/token.h
+/home/csuser/Documents/cpsc326/FinalProject/token.h
 
-/home/csuser/Documents/cpsc326/project-zfoteff/data_object.h
+/home/csuser/Documents/cpsc326/FinalProject/data_object.h
 string
 -
 
-/home/csuser/Documents/cpsc326/project-zfoteff/heap.h
+/home/csuser/Documents/cpsc326/FinalProject/heap.h
 unordered_map
 -
 data_object.h
-/home/csuser/Documents/cpsc326/project-zfoteff/data_object.h
+/home/csuser/Documents/cpsc326/FinalProject/data_object.h
 
-/home/csuser/Documents/cpsc326/project-zfoteff/interpreter.h
+/home/csuser/Documents/cpsc326/FinalProject/interpreter.h
 iostream
 -
 unordered_map
@@ -30,59 +30,59 @@ unordered_map
 regex
 -
 ast.h
-/home/csuser/Documents/cpsc326/project-zfoteff/ast.h
+/home/csuser/Documents/cpsc326/FinalProject/ast.h
 symbol_table.h
-/home/csuser/Documents/cpsc326/project-zfoteff/symbol_table.h
+/home/csuser/Documents/cpsc326/FinalProject/symbol_table.h
 data_object.h
-/home/csuser/Documents/cpsc326/project-zfoteff/data_object.h
+/home/csuser/Documents/cpsc326/FinalProject/data_object.h
 heap.h
-/home/csuser/Documents/cpsc326/project-zfoteff/heap.h
+/home/csuser/Documents/cpsc326/FinalProject/heap.h
 mypl_exception.h
-/home/csuser/Documents/cpsc326/project-zfoteff/mypl_exception.h
+/home/csuser/Documents/cpsc326/FinalProject/mypl_exception.h
 
-/home/csuser/Documents/cpsc326/project-zfoteff/lexer.h
+/home/csuser/Documents/cpsc326/FinalProject/lexer.h
 istream
 -
 string
 -
 token.h
-/home/csuser/Documents/cpsc326/project-zfoteff/token.h
+/home/csuser/Documents/cpsc326/FinalProject/token.h
 mypl_exception.h
-/home/csuser/Documents/cpsc326/project-zfoteff/mypl_exception.h
+/home/csuser/Documents/cpsc326/FinalProject/mypl_exception.h
 
-/home/csuser/Documents/cpsc326/project-zfoteff/mypl.cpp
+/home/csuser/Documents/cpsc326/FinalProject/mypl.cpp
 iostream
 -
 fstream
 -
 token.h
-/home/csuser/Documents/cpsc326/project-zfoteff/token.h
+/home/csuser/Documents/cpsc326/FinalProject/token.h
 mypl_exception.h
-/home/csuser/Documents/cpsc326/project-zfoteff/mypl_exception.h
+/home/csuser/Documents/cpsc326/FinalProject/mypl_exception.h
 lexer.h
-/home/csuser/Documents/cpsc326/project-zfoteff/lexer.h
+/home/csuser/Documents/cpsc326/FinalProject/lexer.h
 parser.h
-/home/csuser/Documents/cpsc326/project-zfoteff/parser.h
+/home/csuser/Documents/cpsc326/FinalProject/parser.h
 ast.h
-/home/csuser/Documents/cpsc326/project-zfoteff/ast.h
+/home/csuser/Documents/cpsc326/FinalProject/ast.h
 type_checker.h
-/home/csuser/Documents/cpsc326/project-zfoteff/type_checker.h
+/home/csuser/Documents/cpsc326/FinalProject/type_checker.h
 interpreter.h
-/home/csuser/Documents/cpsc326/project-zfoteff/interpreter.h
+/home/csuser/Documents/cpsc326/FinalProject/interpreter.h
 
-/home/csuser/Documents/cpsc326/project-zfoteff/mypl_exception.h
+/home/csuser/Documents/cpsc326/FinalProject/mypl_exception.h
 
-/home/csuser/Documents/cpsc326/project-zfoteff/parser.h
+/home/csuser/Documents/cpsc326/FinalProject/parser.h
 token.h
-/home/csuser/Documents/cpsc326/project-zfoteff/token.h
+/home/csuser/Documents/cpsc326/FinalProject/token.h
 lexer.h
-/home/csuser/Documents/cpsc326/project-zfoteff/lexer.h
+/home/csuser/Documents/cpsc326/FinalProject/lexer.h
 ast.h
-/home/csuser/Documents/cpsc326/project-zfoteff/ast.h
+/home/csuser/Documents/cpsc326/FinalProject/ast.h
 mypl_exception.h
-/home/csuser/Documents/cpsc326/project-zfoteff/mypl_exception.h
+/home/csuser/Documents/cpsc326/FinalProject/mypl_exception.h
 
-/home/csuser/Documents/cpsc326/project-zfoteff/symbol_table.h
+/home/csuser/Documents/cpsc326/FinalProject/symbol_table.h
 map
 -
 vector
@@ -90,21 +90,21 @@ vector
 list
 -
 data_object.h
-/home/csuser/Documents/cpsc326/project-zfoteff/data_object.h
+/home/csuser/Documents/cpsc326/FinalProject/data_object.h
 
-/home/csuser/Documents/cpsc326/project-zfoteff/token.h
+/home/csuser/Documents/cpsc326/FinalProject/token.h
 string
 -
 map
 -
 
-/home/csuser/Documents/cpsc326/project-zfoteff/type_checker.h
+/home/csuser/Documents/cpsc326/FinalProject/type_checker.h
 iostream
 -
 ast.h
-/home/csuser/Documents/cpsc326/project-zfoteff/ast.h
+/home/csuser/Documents/cpsc326/FinalProject/ast.h
 symbol_table.h
-/home/csuser/Documents/cpsc326/project-zfoteff/symbol_table.h
+/home/csuser/Documents/cpsc326/FinalProject/symbol_table.h
 mypl_exception.h
-/home/csuser/Documents/cpsc326/project-zfoteff/mypl_exception.h
+/home/csuser/Documents/cpsc326/FinalProject/mypl_exception.h
 
