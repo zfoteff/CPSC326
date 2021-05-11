@@ -1,0 +1,51 @@
+
+#----------------------------------------------------------------------
+# Nested if tests
+#----------------------------------------------------------------------
+
+fun int main()
+
+  var x = 0
+  var y = 1
+  var z = 2
+
+  print("test 1: ")
+  if x <= 0 then
+    if y <= 1 then
+      if z > 2 then
+        print("fail\n")
+      else
+        print("pass\n")
+      end
+    end
+  end
+
+  print("test 2: ")
+  if x <= y then
+    if y > z then
+      print("fail 1\n")
+    elseif (y > x) and (y > z) then
+      print("fail 2\n")
+    elseif (y > x) and (x < z) then
+      print("pass\n")
+    end
+  end
+
+  print("test 3: ")
+  if x <= y then
+    if y > z then
+      print("fail 1\n")
+    elseif (y > x) and (y > z) then
+      print("fail 2\n")
+    elseif false then
+      print("fail 3\n")
+    else
+      print("pass\n")
+    end
+  end
+
+end
+
+
+        
+

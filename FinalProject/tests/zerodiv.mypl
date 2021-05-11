@@ -1,0 +1,5 @@
+# Successfully throw ZeroDivision error with division
+fun int main()
+  var x:int = 3/0
+  return 0
+end

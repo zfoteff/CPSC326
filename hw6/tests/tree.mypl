@@ -1,0 +1,105 @@
+#-----------------------------------
+# binary search tree implementation
+#-----------------------------------
+
+#
+# tree node that holds an int value
+#
+type Node
+  var value = 0
+  var left: Node = nil
+  var right: Node = nil
+end
+
+#
+# create a new tree
+#
+fun Node make_tree(val: int)
+  var ptr = new Node
+  ptr.value = val
+  return ptr
+end
+
+#
+# insert a value into the given tree
+# assumes root is not nil 
+#
+fun nil insert(root: Node, val: int)
+  if root == nil then
+    return nil
+  end
+  if val <= root.value then
+    if root.left == nil then
+      root.left = new Node
+      root.left.value = val
+    else
+      insert(root.left, val)
+    end
+  else
+    if root.right == nil then
+      root.right = new Node
+      root.right.value = val
+    else
+      insert(root.right, val)
+    end
+  end
+end
+
+#
+# print out the tree in sorted order
+#
+fun nil print_tree(root: Node)
+  if root != nil then
+    print_tree(root.left)
+    print(" " + itos(root.value))
+    print_tree(root.right)
+  end
+end
+
+#
+# get the height of the tree
+#
+fun int height(root: Node)
+  if root == nil then
+    return 0
+  else
+    var left_height = height(root.left)
+    var right_height = height(root.right)
+    if left_height >= right_height then
+      return 1 + left_height
+    else
+      return 1 + right_height
+    end
+  end
+end
+
+
+#
+# main
+#
+fun int main()
+
+  #
+  # create a tree and print it
+  # should print ...
+  #   Tree Values: 1 2 5 7 10 12 13 14 15
+  #   Tree Height: 5
+  #
+
+  var tree = make_tree(10)
+  insert(tree, 5)
+  insert(tree, 15)
+  insert(tree, 2)
+  insert(tree, 12)
+  insert(tree, 7)
+  insert(tree, 1)
+  insert(tree, 13)
+  insert(tree, 14)
+  print("Tree Values:")
+  print_tree(tree)  
+  print("\n")
+  print("Tree Height: ")
+  print(itos(height(tree)))
+  print("\n")
+
+end

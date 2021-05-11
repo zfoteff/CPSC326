@@ -1,0 +1,67 @@
+# Erroneous cases and odd grammars
+
+# -- No return type decl --
+#fun main()
+#end
+
+# -- No end statement --
+#fun int add(x:int, y:int)
+#  return x + y
+
+#fun int main()
+#  print(add(1, 2))
+#end
+
+fun int main()
+# -- var assignment with == --
+#  var x:int == 0
+
+# -- if without then --
+#  if x < n
+#    x = x + 1
+#  end
+#
+#  print("Here")
+
+# -- if without end --
+#  if x < n then
+#    x = x + 1
+#
+#  print("Here")
+
+# -- function call without closing paren --
+#  foo("Tony Tromboni", 32
+#  print("Hello")
+
+# -- while loop without do --
+#  while x < n
+#    x = x + 1
+#  end
+#
+#  print ("Here")
+
+# -- While loop without end
+#  while x < n do
+#    x = x + 1
+#
+#  print("Here")
+
+# -- for loop without do --
+#  for i = 0 to n - 1
+#    cur = cur.next
+#  end
+
+# -- for loop without end --
+#  for i = 0 to n - 1 do
+#    cur = cur.next
+#
+#  print("Hello")
+
+# -- Misspelled type declarations --
+   var x:ibt = 100
+   var x:sting = "100"
+
+# -- Big Paren (Should not produce error) --
+  x = ((((((((((((((((((((((((((()))))))))))))))))))))))))))
+
+end

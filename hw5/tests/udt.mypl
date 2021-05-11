@@ -1,0 +1,108 @@
+
+#----------------------------------------------------------------------
+# Description: user-defined type declarations and path expressions
+# Requires: basic variable declarations, simple rvalue expressions,
+#           new expressions, basic function definitions (for main)
+#----------------------------------------------------------------------
+
+
+#--------------------
+# passing tests
+#--------------------
+
+type T1
+end
+
+type T2
+  var x = 0
+end
+
+type T3
+  var x = 0
+  var y = ""
+end
+
+type T4
+  var x = 0
+  var y = ""
+  var z = x
+end
+
+type T5
+  var x = 0
+  var t: T4 = nil
+end
+
+type T6
+  var t1 = new T4
+  var t2 = new T5
+  var x = t1.x
+  var y = t2.t.x
+end
+
+type T7
+  var x = 0
+  var n = new T7   # yikes!
+end
+
+type Node
+  var val = 0
+  var nxt: Node = nil
+end
+
+
+fun nil good_paths()
+  var n1 = new Node
+  var n2: Node = new Node
+  var n3: Node = n1.nxt
+  n1.val = 10
+  n1.nxt = n2
+  n2.val = 20
+  n2.nxt = new Node
+  n2.nxt.val = n1.val
+  n2.nxt.nxt = new Node
+  n2.nxt.nxt.val = n2.nxt.val
+end
+
+
+#--------------------
+# type-error tests
+#--------------------
+
+# type B1
+#   var x: int = 0
+#   # Type Error: variable 'x' redefined in current scope at line 75 column 7
+#   var x: char = 'a'
+# end
+
+# type B2
+#   var b: B2 = nil
+#   # Type Error: 'c' not defined in 'B2' at line 81 column 13
+#   var c = b.c
+# end
+
+fun nil bad_paths()
+  var n1 = new Node
+
+  # Type Error: mismatched type in assignment at line 88 column 3
+  # n1.nxt = 0
+
+  # Type Error: variable not a user-defined type at line 91 column 6
+  # n1.val.nxt = new Node
+
+  # Type Error: invalid type for variable 'x1' at line 94 column 11
+  # var x1: double = n1.val
+
+  # Type Error: invalid type for variable 'x2' at line 97 column 11 
+  # var x2: int = n1.nxt
+
+  # Type Error: invalid type for variable 'x3' at line 100 column 11
+  # var x3: Node = n1.val
+
+  # Type Error: variable not a user-defined type at line 103 column 23
+  # var x4 = n1.nxt.nxt.val.nxt
+
+end
+
+fun int main()
+end

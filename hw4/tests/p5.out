@@ -1,0 +1,31 @@
+fun int nop(x: int, y: int)
+   x = (x + y)
+   x = (x - y)
+   return x
+end
+
+type Node
+   var val = 0
+   var next: Node = nil
+end
+
+fun int main()
+   if true then
+      x = 1
+      y = 2
+   elseif false then
+      print("blah")
+      print("hah")
+   else
+      x = y
+   end
+   t = (x * (y + z))
+   t = ((u * v) + (z((u * v)) + w))
+   var1 = neg (x * y)
+   var2 = not ((x and y) or (y and x))
+   var3 = x
+   var4 = not x
+   var s: string = "Hello World!\n"
+   print(s)
+end
+

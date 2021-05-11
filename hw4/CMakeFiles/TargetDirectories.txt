@@ -1,0 +1,3 @@
+/home/csuser/Documents/cpsc326/hw4-zfoteff/CMakeFiles/rebuild_cache.dir
+/home/csuser/Documents/cpsc326/hw4-zfoteff/CMakeFiles/edit_cache.dir
+/home/csuser/Documents/cpsc326/hw4-zfoteff/CMakeFiles/hw4.dir

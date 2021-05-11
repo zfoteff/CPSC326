@@ -1,0 +1,40 @@
+# function definitions and function calls
+
+fun int f(x: int)
+  return x + 1
+end
+
+# TODO: other variants of function definitions
+fun int g(x: int, y:int, x:int)
+  return x + y + z + 42
+end
+
+fun nil foo(name: string, ssn: int, amount: double, isOverdrawn: bool)
+  var out:string = "Name: "+name+" SSN: "+ssn
+                  +" Savings Amount: "+amount+" Overdrawn?: "+isOverdrawn
+  print(out)
+end
+
+
+fun int main()
+
+  var x = f(1)
+  f(3)
+  x = f(4) + f(3)
+
+  # TODO: other variants of function calls
+
+  foo("Johnny Spaghetti", 123456789, 420000.81, false)
+
+  var name = "Tommy Rigatoni"
+  var ssn = 987654321
+  var amount = neg 7300000000.01
+  var overdrawn = true
+  foo(name, ssn, amount, overdrawn)
+
+  x = (f(5) - g(3,4,5)) % 2
+  f(g(3,4,5))
+
+  foo("Susie 'Angel Hair' Soprano", f(g(8,56,7)), x, false)
+
+end

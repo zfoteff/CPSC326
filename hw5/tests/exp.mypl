@@ -1,0 +1,100 @@
+
+#----------------------------------------------------------------------
+# Description: expressions
+# Requires: basic variable declarations
+#----------------------------------------------------------------------
+
+
+#--------------------
+# passing tests
+#--------------------
+
+type T
+end
+
+fun nil good_expressions()
+
+  var t1 = new T
+  
+  # boolean expressions
+  var x1 = true
+  var x2 = false
+  var e1: bool = nil
+  e1 = not false
+  e1 = not not false
+  e1 = not x1
+  e1 = x1 and x2
+  e1 = (x1 and x2) or (x1 and not x1) or (not x1 and not x2)
+  e1 = (t1 == nil) or (nil == t1) or (nil == nil) or (nil != "foo")
+  e1 = (x1 == x2) and (x1 != x2)
+  e1 = (1 == 2) or (1.1 == 2.0) or ('a' == 'b') or ("a" == "b") or (t1 == t1)
+  e1 = (1 != 2) or (1.1 != 2.0) or ('a' != 'b') or ("a" != "b") or (t1 != t1)
+  e1 = (1 <= 2) and (1.4 > 1.0) and ('a' >= 'b') and ("ab" < "bc")
+
+  # arithmetic expressions
+  var i1: int = 6
+  var d1: double = 3.14
+  var s1: string = "ab"
+  var c1: char = 'a'
+  i1 = i1 - i1
+  i1 = i1 - 5 - 6
+  i1 = i1 * 3 - i1 / i1
+  i1 = i1 % 3
+  i1 = 1 + 2 + 3 + 4
+  d1 = d1 - d1 * d1 - d1 * 4.117
+  d1 = 1.0 + 2.0 + 3.0  
+  s1 = "ab" + "cd"
+  s1 = "ab" + 'c'
+  s1 = 'a' + "bc"
+  s1 = 'a' + 'b'
+  
+end
+
+
+#--------------------
+# type-error tests
+#--------------------
+
+fun nil bad_expressions()
+
+  # Type Error: expecting bool expression at line 61 column 15
+  # var e = not 1
+
+  # Type Error: expecting boolean at line 64 column 20
+  # var e = true and 1
+  
+  # Type Error: expecting boolean at line 67 column 11
+  # var e = 1 or false
+
+  # Type Error: mismatched types at line 70 column 13
+  # var e = 1 == 2.7
+
+  # Type Error: mismatched types at line 73 column 15
+  # var e = 'a' <= "b"
+
+  # Type Error: mismatched types at line 76 column 13
+  # var e = 1 == 2 == 3
+
+  # Type Error: mismatched types in '+' at line 79 column 13
+  # var e = 1 + 'a'
+
+  # Type Error: mismatched types in '+' at line 82 column 15
+  # var e = 'a' + 1
+
+  # Type Error: mismatched types in '+' at line 85 column 13
+  # var e = 1 + "b"
+
+  # Type Error: mismatched types in '+' at line 88 column 14
+  # var e = "a" + 1
+
+  # Type Error: mismatched types at line 91 column 13
+  # var e = 1 * 2.0
+
+  # Type Error: mismatched types at line 94 column 15~
+  # var e = 'a' * 2
+
+end
+
+
+fun int main()
+end

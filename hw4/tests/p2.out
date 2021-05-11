@@ -1,0 +1,4 @@
+fun int main()
+   print("Hello World!\n")
+end
+

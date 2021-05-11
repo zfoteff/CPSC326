@@ -1,0 +1,21 @@
+# Catch zero division error
+fun bool foo (x:int, y:int)
+  var a:int = x
+  var b:int = y
+  try
+    while (a/b) != 1 do
+      a = a + 1
+      b = b - 1
+    end
+  catch (ZeroDivision) then
+    print("Caught a divide by zero error!")
+    return false
+  end
+
+  return true
+end
+
+fun int main()
+  var x:bool = foo(3,2)
+  return 0
+end

@@ -1,0 +1,17 @@
+# Catch a zero div error thrown by a mod by zero
+fun int bar(x:int, y:int)
+  var a:int = 1
+  try
+    a = x % y
+  catch (ZeroDivision) then
+    print("Caught a divide by zero error!")
+  end
+
+  return a
+end
+
+fun int main()
+  var result:int = bar(5,0)
+  print(itos(result))
+  return 0
+end

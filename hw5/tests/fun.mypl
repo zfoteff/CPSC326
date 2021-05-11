@@ -1,0 +1,86 @@
+
+#----------------------------------------------------------------------
+# Description: function declarations and function calls
+# Requires: basic variable declarations, simple rvalue expressions,
+#           return statements, built-in function types
+#----------------------------------------------------------------------
+
+
+#--------------------
+# passing tests
+#--------------------
+
+fun nil f1()
+  var x = 1
+end
+
+fun int f2()
+  var x = 1
+end
+
+fun bool f3()
+  return true
+end
+
+fun bool f4()
+  var x = f3()
+  return x
+end
+
+fun int f5()
+  return f5()
+end
+
+fun nil f6(x: int)
+  f6(1)
+end
+
+fun nil f7(x: int, y: bool)
+  f7(1, true)
+end
+
+fun int f8(x: int, y: string, z: int)
+  f8(f7(1, true), "", 42)
+  return nil
+end
+
+#--------------------
+# type-error tests
+#--------------------
+
+# Type Error: mismatched types in function call at line 53 column 6
+# fun int f9(x:int)
+#   f9(true)
+# end
+
+# Type Error: mismatched types in function call at line 58 column 22
+# fun int f10(x: int, y: bool)
+#   f10(f10(10, true), 42)
+# end
+
+# Type Error: too few arguments in function at line 63 column 3
+# fun int f11(x: int, y: bool)
+#   f11(42)
+# end
+
+# Type Error: too many arguments in function call at line 68 column 3
+# fun int f12(x: int, y: bool)
+#   f12(42, true, 'a')
+# end
+
+# Type Error: invalid return expression type at line 74 column 10
+# fun int f13(x: int, y: bool)
+#   f13(42, true)
+#   return true
+# end
+
+fun int main()
+  print("hello world")
+  var x: int = stoi("1")
+  var y: double = stod("3.14")
+  var z: string = itos(42)
+  var u: string = dtos(3.14159)
+  var v: char = get(0, "ab")
+  var r: int = length("ab")
+  var s: string = read()
+end

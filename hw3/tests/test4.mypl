@@ -1,0 +1,69 @@
+# example expressions
+
+fun int main()
+
+  # simple arithmetic
+  var x = 1
+  var y = 2 * 3
+  var z = 0 - 1
+  var w = 4 / 2
+  var u = 5 % 2
+  var v = neg 3
+  var s = neg 2.91
+
+  # more involved expressions
+  x = 4 * 5 + 2
+  x = 3 * x + y
+  x = x + 1 / 2 - z
+
+  # TODO: add additional expression cases
+  x = 3.14 * 3 / 4
+  x = 1 * 2 * 3 * 4 + 1 * 2 * 3 / 1 * 2 * 3
+
+
+  # parenthesized expressions
+  x = ((5))
+  x = (5 + 3)
+  x = 5 + (3 * 2)
+  x = (5 + 3) * 2
+  x = ((4 / (1 + 1)) + 1)
+  x = (4 / (1 + (1 + 1)))
+  x = ((x + y) / 2) + (1 / 2)
+
+  # TODO: add additional cases
+  pi = 3.14159265
+  x = (3 * pi) / 4
+  x = (((3 / 4) + 0.75) + (neg 8 * (1 / 8)))
+
+
+  # boolean operators
+  var a = true
+  var b = not a
+  var c = a or b
+  var d = not a and b
+  a = a or b and c or d
+
+  # TODO: add additional cases
+  var x = a and b or a and c
+  var y:bool = d and x
+  var z = x and y
+
+
+  # parenthesized boolean ops
+  b = (a or b) and (not (c or (d and b)))
+
+  # TODO: add additional cases
+  x = not (((y and b) or (z and b)) and a)
+  x = (x and true) or (x and y)
+
+
+  # relational operators
+  var m = 0 < 1
+  var n = m == 1
+
+  # TODO: add additional cases
+  var x = neg m == (n % 2)
+  var y = neg(m >= n)
+  var z = y <= x
+
+end

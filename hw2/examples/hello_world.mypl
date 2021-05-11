@@ -1,0 +1,5 @@
+# simple hello world program
+
+fun int main()
+  print("Hello World!\n")
+end

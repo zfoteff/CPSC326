@@ -1,0 +1,20 @@
+fun bool parity(num:int)
+  if (num % 2) == 0 then
+    return true
+  else
+    return false
+  end
+end
+
+fun int main()
+  print("Enter an integer:")
+  var user_input = stoi(read())
+
+  if parity(user_input) == true then
+    print("Number is even")
+  else
+    print("Number is odd")
+  end
+
+  return 0
+end

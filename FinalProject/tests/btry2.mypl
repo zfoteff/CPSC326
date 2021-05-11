@@ -1,0 +1,10 @@
+# Try to raise stmt other than a bool, int or double
+fun int main()
+  try
+    throw "This isn't right..."
+  catch (true) then
+    print("Checkpoint 2")
+  end
+
+  return 0
+end

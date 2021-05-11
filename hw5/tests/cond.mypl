@@ -1,0 +1,104 @@
+
+#----------------------------------------------------------------------
+# Description: basic while and if tests
+# Requires:    basic function and variable declarations, simple rvalue
+#              expressions
+#----------------------------------------------------------------------
+
+fun int main()
+
+  #--------------------
+  # passing tests
+  #--------------------  
+
+  var flag1 = true
+  var flag2 = false
+
+  while true do
+  end
+
+  while flag1 do
+  end
+
+  while flag2 do
+  end
+
+  while true do
+    while false do
+    end
+    while flag1 do
+    end
+  end
+
+  while flag1 do
+    var flag3 = true
+    while flag3 do
+    end
+  end
+
+  if true then
+  end
+
+  if flag1 then
+  end
+
+  if flag1 then
+    var flag3 = false
+  else
+    var flag3 = true
+  end
+
+  if true then
+    var flag3 = false
+  elseif flag2 then
+    var flag3 = false
+  else
+    var flag3 = false
+  end
+
+  if true then
+    var flag3 = false
+  elseif flag2 then
+    var flag3 = false
+  elseif flag1 then
+    var flag3 = false
+  else
+    var flag3 = false
+  end
+    
+  if true then
+    var flag1 = false
+    if flag1 then
+      var flag2 = true
+      if flag2 then
+        var flag1 = true
+      else
+        var flag1 = true
+      end
+    end
+  end
+
+  while flag1 do
+    if false then
+      var flag1 = false
+    else
+      var flag1 = true
+    end
+  end
+
+  #--------------------
+  # type-error tests
+  #--------------------  
+
+  # Type Error: Expecting bool expression at line 94 column 9 
+  # while 1 do end
+
+  # Type Error: expecting bool expression at line 97 column 6
+  # if 1 then end
+
+  # Type Error: expecting bool expression at line 101 column 10
+  # if true then
+  # elseif 2 then
+  # end
+
+end

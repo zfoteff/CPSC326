@@ -1,0 +1,18 @@
+
+3.14159#double stacked next to comment
+
+x=y==z<=foo>baz # should be five ids, four ops
+
+notbar andfoo orfoo ifthen #should only be four ids
+
+"hello 'w'orld" #should be a single string
+
+xs,ys,zs # should be three ids and two commas
+
+'a''b''c' # should be three characters
+
+=<= # should be = followed by <=
+
+0'a' # should be int followed by char (w/out space)
+
+#0abc # an error (int followed by id w/out space)

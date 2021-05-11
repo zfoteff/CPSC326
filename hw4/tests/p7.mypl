@@ -1,0 +1,20 @@
+# Ensure program works for program with instructions written on different lines
+
+fun 
+int 
+x(a:int, b:int) 
+var 
+c:int 
+= 
+a + b 
+return 
+c 
+end 
+fun 
+int 
+main() 
+var 
+add:int 
+=
+x(1, 2) 
+end

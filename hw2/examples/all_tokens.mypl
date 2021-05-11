@@ -1,0 +1,21 @@
+
+, . ( ) :
+ + - * /
+== = <= < !=
+""
+ "hello world!"
+
+'a' 'b'
+
+neg and or not
+
+type while for to do if then elseif else end fun var return new
+
+bool int double char string
+
+nil true false
+
+x xs ys foo bar foobarbaz foo_bar_baz
+
+# examples of illegal tokens, uncomment to check that an error results:
+#'bb'

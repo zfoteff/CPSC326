@@ -1,0 +1,8 @@
+fun int main()
+  var x = false;
+  if x == true then
+    print("x is true!")
+  else
+    print ("x is false")
+  end
+end

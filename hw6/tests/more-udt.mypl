@@ -1,0 +1,35 @@
+
+#----------------------------------------------------------------------
+# Additional user-defined type tests
+#----------------------------------------------------------------------
+
+type T1 
+  var x = 0
+  var y = 1
+end
+
+type T2
+  var t1 = new T1
+end
+
+type T3
+  var t2: T2 = nil
+end
+
+
+fun int main()
+
+  var ref_1 = new T1
+
+  print("Should be 0: " + itos(ref_1.x) + "\n")
+  print("Should be 1: " + itos(ref_1.y) + "\n")
+
+  var ref_2 = new T3
+  ref_2.t2 = new T2
+  ref_2.t2.t1.x = 5
+  ref_2.t2.t1.y = 3
+
+  print("Should be 5: " + itos(ref_2.t2.t1.x) + "\n")
+  print("Should be 3: " + itos(ref_2.t2.t1.y) + "\n")
+
+end

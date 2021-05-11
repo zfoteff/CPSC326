@@ -1,0 +1,25 @@
+#----------------------------------------------------------------------
+# Nested while statement tests
+#----------------------------------------------------------------------
+
+fun int main()
+  var x = 1
+  var y = 1
+  var z = 1
+  var c = 4
+
+  while x < c do
+    while y < c do
+      while z < c do
+        print(itos(x) + ", " + itos(y) + ", " + itos(z) + "\n")
+	z = z + 1
+      end
+      y = y + 1
+      z = 1
+    end
+    x = x + 1
+    y = 1
+  end
+
+end
+

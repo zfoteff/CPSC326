@@ -1,0 +1,32 @@
+
+#----------------------------------------------------------------------
+# Simple built-in function tests
+#----------------------------------------------------------------------
+
+
+fun int main()
+
+  print("Normal String\n")
+
+  print("String with \t tab\n")
+
+  print(itos(stoi("42")))
+  print("\n")
+
+  print(dtos(stod("3.14159")))
+  print("\n")
+
+  print(itos(length("foo bar")))
+  print("\n")
+
+  print("" + get(0, "foo"))  
+  print("\n")
+
+  print("" + get(1, "foo"))
+  print("\n")  
+
+  print("Enter a string: ")
+  print(read())
+  print("\n")
+end
+

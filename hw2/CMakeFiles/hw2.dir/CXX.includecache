@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/csuser/Documents/cpsc326/hw2-zfoteff/hw2.cpp
+iostream
+-
+fstream
+-
+token.h
+/home/csuser/Documents/cpsc326/hw2-zfoteff/token.h
+lexer.h
+/home/csuser/Documents/cpsc326/hw2-zfoteff/lexer.h
+mypl_exception.h
+/home/csuser/Documents/cpsc326/hw2-zfoteff/mypl_exception.h
+
+/home/csuser/Documents/cpsc326/hw2-zfoteff/lexer.h
+istream
+-
+string
+-
+token.h
+/home/csuser/Documents/cpsc326/hw2-zfoteff/token.h
+mypl_exception.h
+/home/csuser/Documents/cpsc326/hw2-zfoteff/mypl_exception.h
+
+/home/csuser/Documents/cpsc326/hw2-zfoteff/mypl_exception.h
+
+/home/csuser/Documents/cpsc326/hw2-zfoteff/token.h
+string
+-
+map
+-
+

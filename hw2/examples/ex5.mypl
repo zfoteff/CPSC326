@@ -1,0 +1,36 @@
+# basic user-defined type and basic variable declarations and assignments
+# this test does not need any additions
+
+type MyType
+  var myvar1: int = 0
+  var myvar2: string = ""
+  var myvar3: MyType = nil
+end
+
+
+fun int main()
+
+  # simple vars
+  var x = 42
+  var y = "foo bar"
+  var u = true
+  var v = 'b'
+  var w = 3.14159
+
+  # simple assignment
+  x = 43
+  y = "foo bar baz"
+  u = false
+  v = 'c'
+  w = 4.0
+
+  # user-defined types
+  var the_mytype = new MyType
+  the_mytype.myvar1 = x
+  the_mytype.myvar2 = y
+  the_mytype.myvar3 = new MyType
+  the_mytype.myvar3.myvar1 = the_mytype.myvar1
+  the_mytype.myvar3.myvar2 = the_mtype.myvar2
+  the_mytype.myvar3.myvar3 = the_mytype.myvar3.myvar3
+
+end

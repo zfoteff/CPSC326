@@ -1,0 +1,9 @@
+# Try to catch stmt other than a bool, int or double
+fun int main()
+  try
+    throw 300040
+  catch ("300040") then
+    print("Thats a match")
+  end
+  return 0
+end

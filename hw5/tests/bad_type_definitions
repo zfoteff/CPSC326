@@ -1,0 +1,10 @@
+# Incorrect type definitions
+
+fun int main()
+  var x:double = 42
+  var y:int = 3.14159
+  var u:string = true
+  var v:int = 'b'
+  var w:char = "foo bar"
+  var z:bool = "true"
+  

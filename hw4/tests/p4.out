@@ -1,0 +1,41 @@
+fun nil nop()
+   return nil
+end
+
+fun int function0(x: int)
+   return x
+end
+
+fun int function1(x: int)
+   if (x > (0 and (x < 10))) then
+      return (x + 1)
+   else
+      return (x + neg 1)
+   end
+end
+
+fun int function2(x: int, y: int, z: string)
+   y = (y * 2)
+   while (x < y) do
+      x = (x * 2)
+   end
+   return x
+end
+
+type T1
+end
+
+type T2
+   var x = 0
+end
+
+type T3
+   var x = 0
+   var y: int = 1
+end
+
+fun int main()
+   var t3 = new T3
+   t3.y = 2
+end
+

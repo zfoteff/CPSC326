@@ -1,0 +1,41 @@
+
+#----------------------------------------------------------------------
+# Simple linked list
+#----------------------------------------------------------------------
+
+type Node
+  var val = 0
+  var next: Node = nil
+end
+
+
+fun int main()
+
+  # creates a list: [10,20,30,40,50]
+
+  var head: Node = nil
+  var len = 5
+
+  for i = 0 to (len - 1) do
+    var ptr = new Node
+    ptr.val = (len - i) * 10
+    ptr.next = head
+    head = ptr
+  end
+
+  # prints the list
+
+  print("[")
+  var i = 0
+  var ptr = head
+  while i < len do
+    print(itos(ptr.val))
+    if i < (len - 1) then
+      print(", ")
+    end
+    ptr = ptr.next
+    i = i + 1
+  end
+  print("]\n")
+
+end

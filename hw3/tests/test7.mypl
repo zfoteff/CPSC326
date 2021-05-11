@@ -1,0 +1,96 @@
+# Test file with a simple implementation of a node type
+# along with basic functions for operations on nodes
+
+type Node
+  var key:string = ""
+  var value:int = 0
+  var next:Node = nil
+end
+
+fun nil print_node(n:Node)
+  print(n.key+", "+n.value)
+end
+
+fun int sum_nodes(n1:Node, n2:Node)
+  return n1.value + n2.value
+end
+
+fun int diff_nodes(n1:Node, n2:Node)
+  return n1.value - n2.value
+end
+
+fun Node node_add(n1:Node, n2:Node)
+  var new_node: Node = nil
+  new_node.key = "" + n1.name + n2.name
+  new_node.key = n1.value + n2.value
+  return new_node
+end
+
+fun bool node_equal(n1:Node, n2:Node)
+  if n1.value == n2.value then
+    return true
+  else
+    return false
+  end
+end
+
+fun Node node_sub(n1:Node, n2:Node)
+  var new_node: Node = nil
+  new_node.key = "" + n1.name + n2.name
+  new_node.key = n1.value - n2.value
+  return new_node
+end
+
+fun nil link_nodes(n1:Node, n2:Node)
+  n1.next = n2
+end
+
+fun int main()
+  var node1: Node = nil
+  var node2: Node = nil
+  var node3: Node = nil
+  var node4: Node = nil
+  var node5: Node = nil
+  node1.key = "A"
+  node1.value = 100
+  node2.key = "B"
+  node2.value = 200
+  node3.key = "C"
+  node3.value = 300
+  node4.key = "D"
+  node4.value = 400
+  node5.key = "E"
+  node5.value = 500
+
+  sum_nodes(node1, node2)
+  var node6:Node = node_add(node1, node2)
+
+  diff_nodes(node2, node1)
+  var node7:Node = node_sub(node2, node1)
+
+  if node_equal(node6, node7) then
+    print("The nodes are equal!")
+    link_nodes(node1, node2)
+  else
+    print("The nodes are not equal!")
+  end
+
+  sum_nodes(node3, node4)
+  var node8:Node = node_add(node3, node4)
+
+  diff_nodes(node4, node3)
+  var node9:Node = node_sub(node4, node3)
+
+  if node_equal(node6, node9) then
+    print("The nodes are equal!")
+    link_nodes(node2, node3)
+  else
+    print("The nodes are not equal!")
+  end
+
+  var iter:Node = node1
+  while iter != nil do
+    print_node(iter)
+    iter = iter.next
+  end
+end

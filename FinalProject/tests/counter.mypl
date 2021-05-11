@@ -1,0 +1,9 @@
+fun int main()
+  var x:int = 0
+  while x < 10 do
+    print(itos(x))
+    x = x + 1
+  end
+
+  return 0
+end

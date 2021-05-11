@@ -1,0 +1,32 @@
+
+#----------------------------------------------------------------------
+# Fibonacci sequences (recursion)
+#----------------------------------------------------------------------
+
+fun nil print_result(n: int, r: int)
+  print("fib(")
+  print(itos(n))
+  print(") = ")
+  print(itos(r))
+  print("\n")
+end
+
+fun int fib(x: int)
+  if (x == 0) or (x == 1) then
+    return x
+  else
+    return fib(x - 2) + fib(x - 1)
+  end
+end
+
+
+# first 19 fib numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,
+#                       233, 377, 610, 987, 1597, 2584
+
+fun int main()
+  var n = 0
+  while n < 19 do
+    print_result(n, fib(n))
+    n = n + 1
+  end
+end

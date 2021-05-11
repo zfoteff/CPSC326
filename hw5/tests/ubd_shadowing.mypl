@@ -1,0 +1,27 @@
+# Use before declaration errors and shadowing errors
+
+fun int main()
+  var x = 42
+  var y = 3.14159
+  var u = true
+  var v = 'b'
+  var w = "foo bar"
+  var z = "true"
+
+# No variable declared in scope named a
+# var n1 = x + a
+
+# shadowing errors
+# var x:int = 2
+# var x:int = x + 1
+# var x:string = "Uhh why am i trying this"
+
+# Variable in body shadows for loop counter
+# for i = 0 to 10 do
+#   counter = counter + 1
+#   if counter % 2 == 0 then
+#     var i = 3
+#   end
+# end
+
+end

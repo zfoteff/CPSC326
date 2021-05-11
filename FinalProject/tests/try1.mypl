@@ -1,0 +1,15 @@
+fun nil parity (x:int)
+  try
+    if (x % 2) == 0 then
+      throw true
+    else
+      print("Odd!")
+    end
+  catch (true) then
+    print("Even!")
+  end
+end
+
+fun int main ()
+  parity(8)
+end

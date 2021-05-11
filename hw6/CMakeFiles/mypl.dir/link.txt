@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -g  -rdynamic CMakeFiles/mypl.dir/hw6.cpp.o  -o mypl 

@@ -1,0 +1,7 @@
+# Try without a catch stmt
+fun int main()
+  try
+    print ("hello")
+  end
+  return 0
+end

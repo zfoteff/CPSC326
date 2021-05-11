@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -g  -rdynamic CMakeFiles/mypl.dir/mypl.cpp.o  -o mypl 

@@ -1,0 +1,56 @@
+# while loops, for loops, and conditionals (if statements)
+
+fun int main()
+
+  # minimal while loop
+  while true do
+  end
+
+  # basic while loop one expression
+  while x != 1 do
+    x = x - 1
+  end
+
+  # nested while loop
+  while x < n do
+    while y < n do
+      y = y + 1
+    end
+    x = x + 1
+  end
+
+  # TODO: additional while tests as needed
+  while x < n or n < 25 do
+    x = x + 1
+  end
+
+  # TODO: for loops
+  for i = 0 to n - 1 do
+    cur = cur.next
+  end
+
+
+  # TODO: if statements
+  if x < n then
+    x = x + 1
+  end
+
+  if x == "thisismysuperstrongpassword" then
+    user.unlock = true
+  else
+    user.unlock = false
+  end
+
+  if x == "Y" then
+    keep_going = true
+  elseif x == "N" then
+    keep_going = false
+  else
+    print("Error")
+  end
+
+
+  # TODO: nested for, while, if variants
+
+
+end

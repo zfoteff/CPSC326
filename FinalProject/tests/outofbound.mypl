@@ -1,0 +1,5 @@
+# Successfully throw out of IndexOutOfBounds error
+fun int main()
+  var x:char = get(100, "foo")
+  return 0
+end

@@ -1,0 +1,17 @@
+# Catch index out of bound exceptions
+fun char my_get (in:string, idx:int)
+  try
+    var char_at_idx:char = get(idx, in)
+    return char_at_idx
+  catch (IndexOutOfBounds) then
+    print ("Index out of bounds")
+  end
+
+  return 'X'
+end
+
+fun int main()
+  # Should output "Index out of bounds" and a capitol X
+  var out:char = my_get("Hello", 10)
+  return 0
+end

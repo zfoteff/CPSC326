@@ -1,0 +1,36 @@
+# Basic type definitions that should type check, but fail once used
+
+fun int main()
+  var x = 42
+  var y = 3.14159
+  var u = true
+  var v = 'b'
+  var w = "foo bar"
+  var z = "true"
+
+# Can't add int and double
+# var y = x+y
+
+# The sum of two chars is always a string
+# var str:char = v + 'a'
+
+# Cannot add an int and a non-ints
+#   int + double
+# var d = x + y
+
+#   int + char
+# var b = x + v
+
+#   int + str
+# var c = x + w
+
+#   int + bool
+# var d = x + v
+
+# Cannot use not to negate a string
+# var is_true:bool = not z
+
+# Cannot use neg to negate a boolean
+# var e = neg u
+
+end

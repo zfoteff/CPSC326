@@ -1,0 +1,3 @@
+# Ensure program works for program written on single line 
+
+fun int x(a:int, b:int) var c:int = a + b return c end fun int main() var add:int = x(1, 2) end

@@ -1,0 +1,51 @@
+
+#----------------------------------------------------------------------
+# Basic conditional tests
+#----------------------------------------------------------------------
+
+fun int main()
+  var x = 10
+  while x > 0 do
+    x = x - 1
+  end
+  print("Should be 0: " + itos(x) + "\n")
+
+  print("Should print else case: ")
+  if (x != 0) or (x < 0) then
+    print("if case\n")
+  else
+    print("else case\n")
+  end
+
+  print("Should print elseif case: ")
+  if x > 0 then
+    print("if case\n")
+  elseif x <= 0 then
+    print("elseif case\n")
+  else
+    print("else case")
+  end
+
+  print("Should print else case: ")
+  if x > 0 then
+    print("if case\n")
+  elseif x < 0 then
+    print("elseif case\n")
+  else
+    print("else case\n")
+  end
+
+  x = nil
+
+  print("Should print oops: ")
+  if x == nil then print("oops!\n") end
+
+  # basic for loop
+  print("should be 1 2 3 4 5 6: ")
+  for i = 1 to (2*3) do
+    print(itos(i))
+    print(" ")
+  end
+  print("\n")
+
+end

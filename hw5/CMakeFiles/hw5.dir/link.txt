@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -g  -rdynamic CMakeFiles/hw5.dir/hw5.cpp.o  -o hw5 

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/csuser/Documents/cpsc326/hw1-zfoteff/hw1.cpp
+iostream
+-
+token.h
+/home/csuser/Documents/cpsc326/hw1-zfoteff/token.h
+
+/home/csuser/Documents/cpsc326/hw1-zfoteff/token.h
+string
+-
+map
+-
+

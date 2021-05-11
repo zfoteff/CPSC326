@@ -1,0 +1,5 @@
+# No main function error
+
+fun int maine()
+  print("Hello, World!")
+end

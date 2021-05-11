@@ -1,0 +1,31 @@
+
+#----------------------------------------------------------------------
+# Very simple user-defined type tests
+#----------------------------------------------------------------------
+
+type Type1
+   var x = 0
+   var y = 1
+end
+
+
+fun int main()
+
+  var t1 = new Type1
+
+  print("t1.x should be 0: " + itos(t1.x) + "\n")
+  print("t1.y should be 1: " + itos(t1.y) + "\n")
+
+  t1.x = 5
+  t1.y = 6
+
+  print("t1.x should now be 5: " + itos(t1.x) + "\n")
+  print("t1.y should now be 6: " + itos(t1.y) + "\n")
+
+  t1.x = t1.y + 1
+  t1.y = t1.x + 1
+
+  print("t1.x should now be 7: " + itos(t1.x) + "\n")
+  print("t1.y should now be 8: " + itos(t1.y) + "\n")
+
+end

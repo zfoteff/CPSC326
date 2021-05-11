@@ -1,0 +1,33 @@
+
+#----------------------------------------------------------------------
+# Very basic function tests
+#----------------------------------------------------------------------
+
+
+fun nil println(s: string)
+  print(s + "\n")
+end
+
+fun int f1(x: int, y: int)
+  var z = x + y
+  println("... in f1")
+  return z
+end
+
+fun string f2(x: string)
+  println("... in f2, x = " + x) 
+  return x + x
+end
+
+fun string f3(x: string)
+  x = f2(x)
+  println("... in f3, after f2, x = " + x)
+  return x
+end
+
+fun int main()
+  var r1 = f1(3, 4)
+  print("Should be 7: " + itos(r1) + "\n")
+  var r2 = f3("ab")
+  println("Should be abab: " + r2)
+end
